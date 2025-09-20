@@ -1,0 +1,14 @@
+{
+  "task_id": "TASK-001",
+  "status": "PASS",
+  "coverage": {
+    "pct": 85,
+    "min_required": 80,
+    "details": ".codex/runs/20250918T040409Z/coverage"
+  },
+  "scenarios": [
+    "POST /api/generate returns drafts with platform fit",
+    "PUT/GET /api/drafts recomputes fit server-side",
+    "Malformed JSON maps to 400 invalid_json"
+  ]
+}

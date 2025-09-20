@@ -1,0 +1,9 @@
+{
+  "task_id": "TASK-004",
+  "status": "PASS",
+  "coverage": 100.0,
+  "scenarios": [
+    "Per-platform editors show counts and warn when over limit",
+    "Manual edits persist across regenerate with tone change"
+  ]
+}

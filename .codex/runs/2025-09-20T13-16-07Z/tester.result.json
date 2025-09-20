@@ -1,0 +1,14 @@
+{
+  "task_id": "TASK-006",
+  "status": "PASS",
+  "coverage": {
+    "statements": 92.53,
+    "branches": 64.96,
+    "functions": 93.33,
+    "lines": 92.53
+  },
+  "scenarios": [
+    "./scripts/test — UI suite covering draft helpers, autosave, and draft editors",
+    "CI=true npm run test -- --coverage — Vitest coverage run including multi-byte counter regression"
+  ]
+}

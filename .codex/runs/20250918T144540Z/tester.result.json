@@ -1,0 +1,10 @@
+{
+  "task_id": "TASK-003",
+  "status": "PASS",
+  "coverage": 100.0,
+  "scenarios": [
+    "Form submission stays disabled until objective, CTA, tone, and platform are set",
+    "Successful /api/generate call renders returned drafts",
+    "Failed API call surfaces error alert"
+  ]
+}

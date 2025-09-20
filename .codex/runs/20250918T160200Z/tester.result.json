@@ -1,0 +1,9 @@
+{
+  "task_id": "TASK-005",
+  "status": "PASS",
+  "coverage": 100.0,
+  "scenarios": [
+    "Tone override returns variant suggestions without clobbering manual edits",
+    "Invalid tone value rejected with HTTP 400"
+  ]
+}

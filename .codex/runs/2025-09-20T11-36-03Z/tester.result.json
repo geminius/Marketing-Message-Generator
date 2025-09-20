@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK-001",
+  "status": "PASS",
+  "coverage": {
+    "statements": 92.53,
+    "branches": 64.23,
+    "functions": 93.33,
+    "lines": 92.53
+  },
+  "scenarios": [
+    "./scripts/test (tests/unit/api.test.js) — success & negative flows for POST /api/generate, drafts API, and health endpoint",
+    "./scripts/test (tests/unit/generator.llm.test.js) — LLM happy path payload, error fallback with validation",
+    "CI=true npm run test -- --coverage — Vitest UI suite covering form submission, platform selection, draft editors"
+  ]
+}

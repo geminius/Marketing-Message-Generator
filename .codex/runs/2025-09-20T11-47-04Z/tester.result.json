@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK-001",
+  "status": "PASS",
+  "coverage": {
+    "statements": 92.53,
+    "branches": 64.23,
+    "functions": 93.33,
+    "lines": 92.53
+  },
+  "scenarios": [
+    "./scripts/test — Node API suite (tests/unit/api.test.js) covering health, invalid input, LLM happy path, Azure URL join fallback",
+    "./scripts/test — LLM module unit suite (tests/unit/llm.test.js) ensuring querystring bases resolve",
+    "CI=true npm run test -- --coverage — Vitest UI flows for brief submission, draft editing, helpers"
+  ]
+}

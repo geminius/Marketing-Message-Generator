@@ -1,0 +1,10 @@
+{
+  "task_id": "TASK-003",
+  "status": "PASS",
+  "coverage": 100.0,
+  "scenarios": [
+    "Form validation keeps submit disabled until all required fields and platforms selected",
+    "Successful /api/generate call renders drafts and tone/platform selections",
+    "Failed API response surfaces error message via alert"
+  ]
+}
