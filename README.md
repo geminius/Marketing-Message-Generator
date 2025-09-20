@@ -1,4 +1,4 @@
-# Market-Message-Generator
+# Market Message Generator
 
 Market-Message-Generator helps marketers turn a single campaign brief into platform-ready social posts. The project bundles a lightweight Node API with a React (Vite) client so you can generate, edit, and export drafts for Instagram, Facebook, and X.
 
