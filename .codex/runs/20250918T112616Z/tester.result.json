@@ -1,0 +1,10 @@
+{
+  "task_id": "TASK-002",
+  "status": "PASS",
+  "coverage": 100.0,
+  "scenarios": [
+    "templates expose tone presets and formatting hints for X, Instagram, Facebook",
+    "validateDraft reports length and formatting violations with metrics",
+    "unknown platform requests raise descriptive errors"
+  ]
+}

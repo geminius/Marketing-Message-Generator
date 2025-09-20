@@ -1,0 +1,15 @@
+{
+  "task_id": "TASK-006",
+  "status": "PASS",
+  "coverage": {
+    "statements": 92.53,
+    "lines": 92.53
+  },
+  "scenarios": [
+    {
+      "name": "UI helpers/export/autosave regression",
+      "status": "pass",
+      "details": "npx vitest run --coverage"
+    }
+  ]
+}

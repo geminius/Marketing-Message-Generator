@@ -1,0 +1,76 @@
+openapi: 3.0.3
+info:
+  title: MarketMessenger API
+  version: 0.1.0
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200': { description: OK }
+  /api/generate:
+    post:
+      summary: Generate drafts from a brief
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                brief: { type: object }
+                platforms: { type: array, items: { type: string } }
+                tone: { type: string, enum: [friendly, professional, witty] }
+              required: [brief, platforms]
+      responses:
+        '200':
+          description: Drafts per platform
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  drafts:
+                    type: object
+                    additionalProperties:
+                      type: object
+                      properties:
+                        text: { type: string }
+                        fit:
+                          type: object
+                          properties:
+                            withinLimit: { type: boolean }
+                            charsRemaining: { type: integer }
+        '400': { description: Invalid request }
+  /api/drafts:
+    get:
+      summary: List drafts for a session
+      parameters:
+        - in: query
+          name: sessionId
+          schema: { type: string }
+          required: true
+      responses:
+        '200': { description: OK }
+        '400': { description: sessionId required }
+  /api/drafts/{id}:
+    put:
+      summary: Upsert a single draft
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema: { type: string }
+        - in: query
+          name: sessionId
+          required: true
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200': { description: OK }
+        '400': { description: Invalid data or session missing }

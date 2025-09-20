@@ -1,0 +1,182 @@
+[
+  {
+    "timestamp": "2025-09-20T11:47:04Z",
+    "story_id": "STORY-001",
+    "task_id": "TASK-001",
+    "shadow_id": "shadow:f560dc37eac99907f4ad410f8a8f9a96d6a9b1e0c40e42cadbdba9e2ba70ed53",
+    "artifacts": [
+      "src/handler.js",
+      "src/server.js",
+      "src/generator.js",
+      "src/llm.js",
+      "src/validation.js",
+      "src/storage.js",
+      "scripts/run",
+      "scripts/test",
+      "tests/unit/api.test.js",
+      "tests/unit/generator.llm.test.js",
+      ".env.example",
+      ".codex/contracts/openapi.yaml"
+    ],
+    "tests": [
+      "tests/unit/api.test.js",
+      "tests/unit/generator.llm.test.js",
+      "tests/ui/brief-form.test.jsx",
+      "tests/ui/helpers.test.jsx",
+      "tests/ui/draft-editors.test.jsx"
+    ],
+    "commands": [
+      "./scripts/test",
+      "CI=true npm run test -- --coverage"
+    ],
+    "coverage_pct": 92.53
+  },
+  {
+    "timestamp": "2025-09-18T13:02:18Z",
+    "story_id": "STORY-001",
+    "task_id": "TASK-002",
+    "shadow_id": "shadow:af4b0bcd5857b5580d1acec935bf6bf5e404f5cd36fa579f356f4157464990a3",
+    "artifacts": [
+      "src/templates.js",
+      "src/validation.js",
+      "tests/unit/templates.test.js",
+      "scripts/test"
+    ],
+    "tests": [
+      "tests/unit/templates.test.js",
+      "tests/unit/api.test.js"
+    ],
+    "commands": [
+      "./scripts/test"
+    ],
+    "coverage_pct": 100
+  },
+  {
+    "timestamp": "2025-09-18T14:49:40Z",
+    "story_id": "STORY-001",
+    "task_id": "TASK-003",
+    "shadow_id": "shadow:bcf98e9f892b50555508e264c6989e4dbc03fdeea9fffcbe20e95aaf23eb25c1",
+    "artifacts": [
+      "package.json",
+      "package-lock.json",
+      ".env.example",
+      "src/ui/App.jsx",
+      "src/ui/components/BriefForm.jsx",
+      "src/ui/components/PlatformSelector.jsx",
+      "src/ui/main.jsx",
+      "src/ui/styles.css",
+      "tests/ui/brief-form.test.jsx",
+      "vite.config.mjs",
+      "vitest.setup.js",
+      "scripts/install",
+      "scripts/lint",
+      "scripts/test",
+      "scripts/run",
+      "scripts/build",
+      "eslint.config.mjs",
+      "index.html",
+      ".gitignore"
+    ],
+    "tests": [
+      "tests/ui/brief-form.test.jsx",
+      "tests/unit/api.test.js",
+      "tests/unit/templates.test.js"
+    ],
+    "commands": [
+      "./scripts/lint",
+      "./scripts/test",
+      "./scripts/build"
+    ],
+    "coverage_pct": 100
+  },
+  {
+    "timestamp": "2025-09-18T15:30:40Z",
+    "story_id": "STORY-002",
+    "task_id": "TASK-004",
+    "shadow_id": "shadow:2fcebb7609108cdd5a46cdbb75f5549f872b992e4c182507f3871175d348162b",
+    "artifacts": [
+      "src/ui/App.jsx",
+      "src/ui/components/DraftEditors.jsx",
+      "src/ui/platforms.js",
+      "src/ui/styles.css",
+      "tests/ui/draft-editors.test.jsx"
+    ],
+    "tests": [
+      "tests/ui/draft-editors.test.jsx",
+      "tests/ui/brief-form.test.jsx"
+    ],
+    "commands": [
+      "./scripts/test",
+      "./scripts/lint",
+      "./scripts/build"
+    ],
+    "coverage_pct": 100
+  },
+  {
+    "timestamp": "2025-09-18T16:13:34Z",
+    "story_id": "STORY-002",
+    "task_id": "TASK-005",
+    "shadow_id": "shadow:04ac7ada7b8e6acc05993ff579ecbd60efa22c8774730243832019e9c4128dd2",
+    "artifacts": [
+      "src/generator.js",
+      "src/handler.js",
+      "tests/unit/api.test.js"
+    ],
+    "tests": [
+      "tests/unit/api.test.js",
+      "tests/unit/templates.test.js"
+    ],
+    "commands": [
+      "./scripts/test",
+      "./scripts/lint",
+      "./scripts/build"
+    ],
+    "coverage_pct": 100
+  },
+  {
+    "timestamp": "2025-09-18T16:47:17Z",
+    "story_id": "STORY-002",
+    "task_id": "TASK-006",
+    "shadow_id": "shadow:fdb0ff7dc644a697d3d382b2efd31bfb3d49de8dd5bab299df9a7fa96ec1c62f",
+    "artifacts": [
+      "package.json",
+      "package-lock.json",
+      "src/ui/App.jsx",
+      "src/ui/components/DraftEditors.jsx",
+      "vite.config.mjs"
+    ],
+    "tests": [
+      "tests/ui/brief-form.test.jsx",
+      "tests/ui/draft-editors.test.jsx",
+      "tests/ui/helpers.test.jsx"
+    ],
+    "commands": [
+      "npx vitest run --coverage"
+    ],
+    "coverage_pct": 92.53
+  },
+  {
+    "timestamp": "2025-09-20T13:16:07Z",
+    "story_id": "STORY-002",
+    "task_id": "TASK-006",
+    "shadow_id": "shadow:0c8fa706711931a03fb2e73478f2e0ed2a0893a1631f2b4ad8834e331747f240",
+    "artifacts": [
+      "package-lock.json",
+      "package.json",
+      "src/ui/App.jsx",
+      "src/ui/components/DraftEditors.jsx",
+      "tests/ui/draft-editors.test.jsx",
+      "vite.config.mjs"
+    ],
+    "tests": [
+      "tests/ui/brief-form.test.jsx",
+      "tests/ui/helpers.test.jsx",
+      "tests/ui/draft-editors.test.jsx"
+    ],
+    "commands": [
+      "./scripts/test",
+      "CI=true npm run test -- --coverage"
+    ],
+    "coverage_pct": 92.53
+  }
+]

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+MODE="${1:-api}"
+
+if [[ "$MODE" == "ui" ]]; then
+  npm run dev
+  exit 0
+fi
+
+export PORT="${PORT:-3100}"
+node src/server.js

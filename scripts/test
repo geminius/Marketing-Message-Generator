@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+for test_file in tests/unit/*.test.js; do
+  node "$test_file"
+done
+
+npm run test

@@ -1,0 +1,12 @@
+{
+  "task_id": "TASK-006",
+  "status": "FAIL",
+  "coverage": null,
+  "scenarios": [
+    {
+      "name": "Coverage enforcement",
+      "status": "blocked",
+      "details": "npx vitest run --coverage fails: Cannot find dependency '@vitest/coverage-v8'"
+    }
+  ]
+}
